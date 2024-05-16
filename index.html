@@ -47,7 +47,8 @@
                         <a href="https://www.linkedin.com/in/jacson-polonha-desenvolvedor-web/" target="_blank">Linkedin <img src="assets\arrow.png"></a>
                     </li>
                     <li class="title__network__item">
-                        <a href="">Curriculo <img src="assets\arrow.png"></a>
+                        
+                        <a href="assets/JacsonPolonha.pdf" target="_blank">Curriculo <img src="assets\arrow.png"></a>
                     </li>
                 </ul>
             </div>
@@ -265,11 +266,15 @@
                     <h2 class="formcontato__title">Contato</h2>
                     <p class="formcontato__subtext">Quer entrar em contato comigo?</p>
                     <p class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </p>
-                    <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+                    <form class="formcontato__form" data-formulario>
+                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome" minlength="3" required>
+                        <span id="nome-erro" class="erro"></span>
+                        <input class="formcontato__input" type="email" id="email" placeholder="Email" minlength="4" required>
+                        <span id="email-erro" class="erro"></span>
+                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required>
+                        <span id="assunto-erro" class="erro"></span>
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+                        <span id="mensagem-erro" class="erro"></span>
                         <button class="formcontato__botao">Enviar mensagem</button>
                     </form>
                 </div>
@@ -285,5 +290,7 @@
         </section>
 
     </div>
+
+    <script src="validate.js"></script>
 </body>
 </html>

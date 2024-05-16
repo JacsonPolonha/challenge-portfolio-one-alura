@@ -222,6 +222,11 @@ section.formcontato{
     font-size: .8em;
 }
 
+.erro {
+    color: #ff0000;
+    font-size: .7rem;
+}
+
 section.footer{
    display: flex;
    background-color: #fff;
@@ -241,6 +246,7 @@ section.footer{
         display: flex;
         flex-direction: row-reverse;
         gap: 20px;
+        font-size: 1.2rem;
     }
 
     .skills__cards {
@@ -267,6 +273,12 @@ section.footer{
     .header .menu__list {
         display: flex;
         gap: 20px;
+    }
+
+    section.title {
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
     }
 
     .about {
